@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
-        from: "harsha.k@vinutnadigitalmedia.com",
+        from: "onboarding@resend.dev",
         to: process.env.RESEND_TO_EMAIL || "",
         subject: `Website Enquiry from ReCirqularity`,
         html: `Name: ${name}
